@@ -21,3 +21,29 @@ const reduceSum2 = function (arr) {
 const reduceSum3 = function (arr) {
     return arr.reduce((acc, cur) => acc + cur);
 }
+
+
+
+const users = [{
+    name: '강만수르',
+    age:  31
+}, {
+    name: '호날두',
+    age: 33
+}, {
+    name: '메시',
+    age: 32
+}]
+
+function showInformationOfUsers(arr) {
+    console.log(arr.length);
+    arr.forEach(function(user, i){
+        console.log(`${i}번째 유저: 이름은 ${user.name}, 나이는 ${user.age}살입니다.`);
+    })
+
+    for(let i =0; i< arr.length; i++) {
+        let user = arr[i];
+        console.log(`${i}번째 유저: 이름은 ${user.name}, 나이는 ${user.age}살입니다.`);
+    }
+}
+showInformationOfUsers(users);
